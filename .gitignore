@@ -1,0 +1,10 @@
+.env
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+*.pem
+*.key
+id_rsa*
+kubeconfig*
+secrets*.yaml
