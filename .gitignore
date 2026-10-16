@@ -8,3 +8,26 @@
 id_rsa*
 kubeconfig*
 secrets*.yaml
+# Secretos: todo lo sensible va aqui
+secrets/
+*.secret
+*.secret.*
+.env.*
+!.env.example
+*.local
+# Terraform / Ansible
+*.tfplan
+crash.log
+.vault_pass*
+*.retry
+
+# Cloudflare Tunnel (el JSON de credenciales es un secreto)
+.cloudflared/
+credentials*.json
+
+# Otros certificados y claves
+*.p12
+*.pfx
+
+# Windows
+Thumbs.db
